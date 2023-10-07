@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ["cdn.imagin.studio"]
-    }
+    experimental: {
+        images: {
+            domains: ["cdn.imagin.studio"]
+        },
+        typedRoutes: true
+      },
+    
 }
 
 module.exports = nextConfig
